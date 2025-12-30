@@ -25,9 +25,9 @@ export class NigerianPolyglotTTS {
   private _initAzure() {
     try {
       // Safely access env vars with fallback to empty object to prevent crashes in strict envs
-      const env = (typeof process !== 'undefined' && process.env) ? process.env : {};
-      const key = env.AZURE_SPEECH_KEY;
-      const region = env.AZURE_SPEECH_REGION;
+      const key = import.meta.env.VITE_AZURE_SPEECH_KEY;
+const region = import.meta.env.VITE_AZURE_SPEECH_REGION;
+
 
       if (key && region) {
         this.speechConfig = SpeechSDK.SpeechConfig.fromSubscription(key, region);
