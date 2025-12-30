@@ -1,0 +1,7 @@
+{
+  "name": "TaxPaddy",
+  "description": "A comprehensive Nigerian tax companion app featuring a PIT/VAT calculator, turnover watchdog, tax trivia, and an AI-powered tax assistant.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
